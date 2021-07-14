@@ -17,7 +17,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="200dp"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="200dp"
             android:text="This is Timer Application!" />
 
@@ -25,12 +25,11 @@
             android:id="@+id/imageBtn"
             android:layout_width="141dp"
             android:layout_height="111dp"
-            android:layout_marginLeft="200dp"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="400dp"
-            app:srcCompat="@android:drawable/ic_popup_reminder" />
+            app:srcCompat="@drawable/spaghetti" />
 
     </FrameLayout>
-
     <FrameLayout
         android:id="@+id/timer"
         android:layout_width="match_parent"
@@ -48,7 +47,7 @@
             android:id="@+id/cancle_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="170dp"
+            android:layout_marginLeft="150dp"
             android:layout_marginTop="400dp"
             android:text="취소" />
 
@@ -56,7 +55,7 @@
             android:id="@+id/stop_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="230dp"
+            android:layout_marginLeft="250dp"
             android:layout_marginTop="400dp"
             android:text="일시정지" />
     </FrameLayout>

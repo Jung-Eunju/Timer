@@ -76,10 +76,11 @@ public class MainActivity extends AppCompatActivity {
     }
     private void startTimer(){
         if(firstState){
-            String sHour = "0";
-            String sMin = "50";
+            //String sHour = "0";
+            String sMin = "9";
             String sSec = "00";
-            time = (Long.parseLong(sHour)*3600000) + (Long.parseLong(sMin)*60000) + (Long.parseLong(sSec)*1000) + 1000;
+            //time = (Long.parseLong(sHour)*3600000) + (Long.parseLong(sMin)*60000) + (Long.parseLong(sSec)*1000) + 1000;
+            time = (Long.parseLong(sMin)*60000) + (Long.parseLong(sSec)*1000) + 1000;
         }else{
             time = tempTime;
         }
@@ -105,12 +106,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateTimer(){
-        int hour = (int)tempTime / 3600000;
+        //int hour = (int)tempTime / 3600000;
         int minutes = (int)tempTime % 3600000 / 60000;
         int secounds = (int) tempTime % 3600000 % 60000 / 1000;
 
         String timeLeftText = "";
-        timeLeftText = ""+ hour + ":";
+        //timeLeftText = ""+ hour + ":";
         if(minutes < 10) timeLeftText +="0";
         timeLeftText +=minutes +":";
         if(secounds < 10) timeLeftText +="0";
